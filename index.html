@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link Tags -->
+    <link href="http://fonts.cdnfonts.com/css/fredoka-one" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="/src/img/favicon.ico" />
+
+    <!-- Title -->
+    <title>Lift Simulation</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__heading">Lift Simulation</h1>
+      <hr class="divider" />
+    </header>
+
+    <section class="control">
+      <h3 class="control__title">Control Input</h3>
+      <form action="" method="post" class="control__form" id="form">
+        <div class="control--floor-input">
+          <label for="floors">No of Floors : </label>
+          <input
+            type="number"
+            min="1"
+            max="15"
+            name="floors"
+            value="4"
+            id="input-floors"
+          />
+        </div>
+        <div class="control--lift-input">
+          <label for="lifts">No of Lifts : </label>
+          <input
+            type="number"
+            min="1"
+            max="5"
+            name="lifts"
+            value="1"
+            id="input-lifts"
+          />
+        </div>
+        <button id="input-btn" class="control__button">Generate</button>
+      </form>
+    </section>
+
+    <hr class="divider" />
+
+    <div class="container" id="container"></div>
+
+    <hr class="divider" />
+
+    <footer class="footer">
+      <p class="footer__text">
+        Link for the GitHub Repository:
+        <a
+          class="footer__link"
+          href="https://github.com/shivjais1807/Lift-Simulator"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Source Code</a
+        >
+      </p>
+    </footer>
+  </body>
+
+  <!-- Scripts -->
+  <script src="./js/index.js"></script>
+</html>
